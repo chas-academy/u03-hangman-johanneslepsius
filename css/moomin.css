@@ -1,0 +1,159 @@
+
+body {
+  font-family: Itim;
+  background: url("../images/background.jpg");
+  box-sizing: border-box;
+}
+#flexcontainer {
+  display: flex;
+}
+#gameBoard {
+  width: 75vw;
+}
+#gameBoard p {
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 45px;
+  margin-top: 10px;
+}
+#letterButtons {
+    /*display: flex;
+    flex-wrap: wrap;*/
+    display: grid;
+    grid-template-columns: repeat(11, auto);
+    grid-template-rows: 3;
+    list-style-type: none;
+}
+.z {
+  grid-column: 3 / 4;
+}
+#messages {
+  font-size: 25px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  width: 20vw;
+}
+.start {
+    border: none;
+    background: none;
+}
+.start img {
+  width: 250px;
+}
+
+.start:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.start:focus {
+  outline: none;
+}
+.start:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+#moominhouse {
+  width: 20vw;
+}
+
+#stinky {
+  width: 150px;
+  transition: 1s;
+}
+
+.alphabet {
+  width: 50px;
+  height: 50px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Itim;
+  text-align: center;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 3px;
+  margin: 5px;
+}
+
+.alphabet:hover {
+  outline: none;
+  background-color: #B2F8FF;
+  cursor: pointer;
+}
+.alphabet:disabled {
+  background-color: darkgray;
+  cursor: default;
+}
+#letterBoxes {
+  margin-top: 50px;
+  list-style-type: none;
+  display: flex;
+}
+#letterBoxes input {
+  font-size: 35px;
+  font-weight: bold;
+  font-family: Itim;
+  text-align: center;
+  color: black;
+  width: 45px;
+  height: 45px;
+  margin: 5px;
+}
+#blank {
+  background: none;
+  border: none;
+}
+#chase {
+  position: fixed;
+  bottom: 0;
+}
+#stinky {
+  position: fixed;
+  bottom: 0;
+}
+#restart {
+  background-color: #B2F8FF;
+  font-family: Itim;
+  font-size: 25px;
+  cursor: pointer;
+  height: 40px
+}
+@media screen and (max-width: 925px) {
+#flexcontainer {
+  display: initial;
+}
+#moominhouse {
+display: none;
+}
+#gameBoard {
+  width: 95vw;
+}
+#house {
+  display: flex;
+}
+#restart {
+  margin-top: 50px;
+  margin-left: 10px;
+}
+}
+
+@media screen and (max-width: 760px) {
+#letterButtons {
+  padding-left: 5px;
+}
+.alphabet {
+  margin: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+}
+.letterBox {
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+}
