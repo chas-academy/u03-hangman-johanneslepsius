@@ -1,9 +1,9 @@
 // If you only want to test the game and are not familiar with the Moomins,
 // the correct word is displayed in the console!
 
-const wordList = ['Mymlan', 'Lilla My'/*, 'Sniff', 'Snusmumriken', 'Snorkfröken', 'Snorken',
+const wordList = ['Mymlan', 'Lilla My', 'Sniff', 'Snusmumriken', 'Snorkfröken', 'Snorken',
     'Too Ticki', 'Filifjonka', 'Hattifnattar', 'Hemulen', 'Mårran', 'Bisamråttan', 'Förfadern',
-'Dronten Edward', 'Fredrikson', 'Gafsan', 'Homsan', 'Hunden Ynk', 'Isfrun'*/]
+'Dronten Edward', 'Fredrikson', 'Gafsan', 'Homsan', 'Hunden Ynk', 'Isfrun']
 
 let messageContainer = document.querySelector("#house");
 let startGameBtn = document.querySelector('.start');
