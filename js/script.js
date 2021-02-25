@@ -58,7 +58,7 @@ function startGame() {
     }
 
     // remove selectedword from wordList. selectedword is uppercase, so randomword the way to go
-    let index = wordList.indexOf(`${randomWord}`);
+    let index = wordList.indexOf(randomWord);
     wordList.splice(index, 1);
 }
 
@@ -87,7 +87,6 @@ function restartGame() {
     stinky.style.display = "initial";
     stinkyMoves = 20;
     stinky.style.left = "300px";
-    debugger;
     if (wordList.length === 0) {
         messages.innerText = "Du har gissat dig genom allt! Ladda om sidan för att spela igen.";
     }
